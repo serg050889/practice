@@ -1,5 +1,12 @@
-h1{
-color: #333333;
-font-size: 65px;
-font-family: Raleway;
-}
+@import "normalize";
+@import "footer";
+@import "header";
+@import "news";
+@import "footer";
+@import "projects";
+@import "contacts";
+@import "our-team";
+@import "who-we-are";
+@import "statistics";
+@import "partners";
+@import "typography";
