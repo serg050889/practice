@@ -160,8 +160,11 @@
   }
 
   @media (max-width: 768px) {
+    padding: 0 20px;
     .stats {
-      padding: 5px;
+      
+
+     
 
       &__grid {
         display: grid;
@@ -240,19 +243,4 @@
     }
 
   }
-
-
-
-  // @media (max-width: 425px) {
-  //   padding: 0 20px;
-
-  //   &__info {
-  //     flex: 0 0 400px;
-  //   }
-
-  //   &__video {
-  //     flex: 0 0 400px;
-  //   }
-
-  // }
 }
