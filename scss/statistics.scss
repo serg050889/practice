@@ -27,6 +27,7 @@
     text-align: justify;
     flex: 1;
     line-height: 1.5;
+    color: #333333;
   }
 
   &__highlight {
@@ -52,14 +53,17 @@
 
   &__item-number {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 8px;
-    color: #222;
+    color: #333333;
+    line-height: 100%;
   }
 
   &__item-label {
     font-size: 18px;
-    color: #666;
+    font-weight: 400;
+    line-height: 150%;
+    color: #333333;
   }
 
   &__media {
@@ -93,8 +97,9 @@
 
   &__info-text {
     font-size: 20px;
+    font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #333;
   }
 
@@ -132,6 +137,14 @@
   @media (max-width: 1024px) {
     .stats {
 
+      &__video {
+        flex: 0 0 680px;
+      }
+
+      &__info {
+        flex: 0 0 680px;
+      }
+
 
       &__desc {
         flex-direction: column;
@@ -161,17 +174,47 @@
 
   @media (max-width: 768px) {
     padding: 0 20px;
-    .stats {
-      
 
-     
+    .stats {
+      &__item-number {
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: #333333;
+        line-height: 100%;
+      }
+
+      &__item-label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #333333;
+      }
+
+      &__video {
+        flex: 0 0 500px;
+      }
+
+      &__info {
+        flex: 0 0 500px;
+      }
+
+      &__buttons {
+        max-width: 500px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__button {
+        width: 222px;
+        font-size: 20px;
+        padding: 15px 15px;
+      }
 
       &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
-
-     
     }
   }
 
@@ -179,7 +222,20 @@
     padding: 0px 20px;
 
     .stats {
+      &__item-number {
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: #333333;
+        line-height: 100%;
+      }
 
+      &__item-label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #333333;
+      }
 
       &__info {
         flex: 0 0 480px;
@@ -201,6 +257,5 @@
         padding: 15px 15px;
       }
     }
-
   }
 }
