@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -312,19 +313,11 @@ template {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  width: 128px;
-  height: 70px;
-  margin: 12px 60px 12px 0;
-}
-
 .header-top__socials {
   display: flex;
   padding: 23px 0;
@@ -332,11 +325,29 @@ template {
   list-style-type: none;
   cursor: pointer;
 }
-
 .header-top__contacts {
   display: flex;
   align-items: center;
   margin: 21.5px 40px 21.5px 377px;
+}
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+  margin: 0 auto 110px;
+}
+
+.logo {
+  width: 128px;
+  height: 70px;
+  margin: 12px 60px 12px 0;
 }
 
 .contact-item1 {
@@ -351,21 +362,6 @@ template {
   gap: 10px;
   margin-left: 35px;
   margin-right: 40px;
-}
-
-.header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-bottom__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  gap: 40px;
-  margin: 0 auto 110px;
 }
 
 .dropdown {
@@ -526,12 +522,10 @@ body {
   justify-content: space-between;
   align-items: stretch;
 }
-
 .who-we-are__title {
   width: 100%;
   text-align: center;
 }
-
 .who-we-are__text-left {
   flex: 1 1 45%;
   display: flex;
@@ -539,31 +533,74 @@ body {
   gap: 30px;
   margin-bottom: 30px;
 }
-
 .who-we-are__text-right {
   flex: 1 1 45%;
   margin-bottom: 30px;
 }
-
-.main-goals {
+@media (max-width: 768px) {
+  .who-we-are {
+    flex-direction: column;
+    align-items: center;
+  }
+  .who-we-are__text-left, .who-we-are__text-right {
+    flex: 1 1 100%;
+    max-width: 95%;
+  }
+}
+.who-we-are .main-goals {
   flex: 1 1 37%;
   display: flex;
   flex-direction: column;
   background: blue;
   border-radius: 20px;
   color: #FFFFFF;
-  margin-right: 20px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   padding: 56px;
   gap: 15px;
 }
-
-.main-goals__img {
-  flex: 1 1 45%;
-}
-
-.main-goals p, .main-goals img {
+.who-we-are .main-goals p, .who-we-are .main-goals img {
   margin: 0;
   line-height: 1.5;
+}
+.who-we-are .main-goals__img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+.who-we-are .main-goals__img .main-goals__img .img-top {
+  display: flex;
+  gap: 10px;
+}
+.who-we-are .main-goals__img .main-goals__img .img-top img {
+  width: 100%;
+  max-width: 48%; /* 48%, чтобы была маленькая щель между ними */
+}
+.who-we-are .main-goals__img .main-goals__img .img-bottom img {
+  width: 100%;
+}
+.who-we-are .inline-icon {
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .who-we-are .main-goals__img {
+    width: 100%;
+    max-width: 95%;
+    margin: 20px auto;
+  }
+  .who-we-are .main-goals__img .img-top {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .who-we-are .main-goals__img .img-top img {
+    width: 48%;
+  }
+  .who-we-are .main-goals__img .img-bottom img {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .stats {
@@ -802,6 +839,14 @@ body {
   color: #333333;
 }
 
+@media (max-width: 768px) {
+  .headline1 {
+    font-size: 35px;
+  }
+  .headline2 {
+    font-size: 35px;
+  }
+}
 .blue-text {
   color: blue;
 }
@@ -833,9 +878,21 @@ body {
 
 .button-group {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin-top: 35px;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    width: 95%;
+    gap: 15px;
+    align-items: center;
+  }
+}
+.button-group button {
+  width: 95%;
+  max-width: 460px;
 }
 
 .button-1 {
@@ -869,18 +926,20 @@ body {
   width: 350px;
   height: 58px;
   padding: 15px 68px;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 30px;
 }
 .button-3:hover {
   color: blue;
   cursor: pointer;
+  border-color: blue;
 }
 
 .button-4 {
   width: 275px;
   height: 41px;
   padding: 10px 31px;
+  border: 1px solid black;
   border-radius: 30px;
 }
 .button-4:hover {
@@ -913,6 +972,11 @@ body {
   border-top: 5px solid blue;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .running-line {
+    font-size: medium;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

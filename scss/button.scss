@@ -33,13 +33,14 @@
   width: 350px;
   height: 58px;
   padding: 15px 68px;
-  border: 1px solid blue;
+  border: 1px solid black;
   border-radius: 30px;
 
 
   &:hover {
     color: blue;
     cursor: pointer;
+    border-color: blue;
   }
 }
 
@@ -49,6 +50,7 @@
   width: 275px;
   height: 41px;
   padding: 10px 31px;
+  border: 1px solid black;
   border-radius: 30px;
 
 

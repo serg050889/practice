@@ -1,35 +1,52 @@
 .header{
   max-width: 1440px;
   margin: 0 auto;
+
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &-top__socials{
+    display: flex;
+    padding: 23px 0;
+    gap: 18px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+  &-top__contacts{
+    display: flex;
+    align-items: center;
+    margin: 21.5px 40px 21.5px 377px;
+  }
+
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &-bottom__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+    margin: 0 auto 110px;
+  }
+
+
 }
 
 
-.header-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
 
 .logo{
   width: 128px;
   height: 70px;
   margin: 12px 60px 12px 0;
-}
-
-.header-top__socials{
-  display: flex;
-  padding: 23px 0;
-  gap: 18px;
-  list-style-type: none;
-  cursor: pointer;
-}
-
-
-.header-top__contacts{
-  display: flex;
-  align-items: center;
-  margin: 21.5px 40px 21.5px 377px;
 }
 
 .contact-item1 {
@@ -45,21 +62,7 @@
   margin-right: 40px;
 }
 
-.header-bottom{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-}
-
-.header-bottom__menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  gap: 40px;
-  margin: 0 auto 110px;
-}
 
 .dropdown {
   position: relative;
@@ -102,3 +105,5 @@
 .dropdown:hover > a {
   color: blue;
 }
+
+
