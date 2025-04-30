@@ -1,10 +1,11 @@
 .who-we-are {
   max-width: 1440px;
   margin: 0 auto 110px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
+  gap: 10px;
 
   &__title {
     width: 100%;
@@ -12,19 +13,16 @@
 
   }
 
-  &__text-left {
+  &__text-left, &__text-right {
     flex: 1 1 45%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
+    justify-content: space-between;
+    gap: 20px;
   }
 
-  &__text-right {
-    flex: 1 1 45%;
-    margin-bottom: 30px;
 
-  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -40,15 +38,13 @@
   }
 
   .main-goals {
-    flex: 1 1 37%;
+    flex: 1 1 45%;
     display: flex;
     flex-direction: column;
     background: blue;
     border-radius: 20px;
     color: #FFFFFF;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    padding: 56px;
+    padding: 40px;
     gap: 15px;
 
     p, img {
@@ -62,21 +58,21 @@
       gap: 20px;
       cursor: pointer;
 
-      .main-goals__img .img-top {
+
+
+
+      .img-top {
         display: flex;
-        gap: 10px;
+        gap: 20px;
       }
 
-      .main-goals__img .img-top img {
+      .img-top img {
+        width: calc(50% - 10px);
+      }
+
+      .img-bottom img {
         width: 100%;
-        max-width: 48%; /* 48%, чтобы была маленькая щель между ними */
       }
-
-      .main-goals__img .img-bottom img {
-        width: 100%;
-      }
-
-
     }
   }
 
@@ -99,12 +95,13 @@
     }
 
     .main-goals__img .img-top img {
-      width: 48%;
+      width: 50%;
     }
 
     .main-goals__img .img-bottom img {
       width: 100%;
       margin-top: 10px;
     }
+
   }
 }
