@@ -1,8 +1,6 @@
 .footer {
     background: #fff;
     padding: 40px 20px;
-    border-top: 2px solid #007bff; // верхняя синяя линия
-    font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #333;
   
@@ -24,14 +22,14 @@
         text-decoration: none;
   
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
           color: blue;
         }
       }
     }
   
     &__link-blue {
-      color: #007bff;
+      color:#1A7DF0;
       cursor: pointer;
   
       &:hover {
@@ -59,11 +57,28 @@
         align-items: center;
         gap: 40px;
       }
-    }
-  } 
-.footer__logo.p {
-    padding: 100px;
-    height: auto;
-    margin-bottom: 20px;
+    }   
 
+ .footer__logo {
+    display: flex;
+    flex-direction:column;  
+    align-content: stretch;
+}
+.rbk{
+    max-width: 150px;
+}
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    img {
+      max-width: 150px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #666;
+    }
   }
+}
