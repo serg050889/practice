@@ -1,65 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    font-family: Raleway;
+  font-family: Raleway;
 }
 .headline1{
-    font-size: 65px;
-    font-weight: 500;
-    color: #333333;
-}
-.headline2{
-    font-size: 42px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 65px;
+  font-weight: 500;
+  color: #333333;
+  }
+
+.headline2 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #333333;
 }
 .headline3{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
 }
 .headline4{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
 }
 .headline5{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
 }
 .text__20{
-    font-size: 20px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
 }
 .text__18{
-    font-size: 18px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
 }
 .text__small{
-    font-size: 12px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
 }
 .ticker{
-    font-size: 32px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
 }
 .button{
-    font-size: 24px;
-    font-weight: 500;
-    color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
 }
 .menu{
-    font-size: 20px;
-    font-weight: 500;
-    color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
 }
 .link{
-    font-size: 12px;
-    font-weight: 400;
-    color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .headline1 {
+    font-size: 35px;
+  }
+  .headline2 {
+    font-size: 35px;
+  }
+}
+
+
+
+.blue-text{
+  color: blue;
+}
+.white-text{
+  color: #FFFFFF
+}
+.yellow-text{
+  color: yellow;
+}
+.blue-dark-text{
+  color: darkblue;
+}
+.black-text{
+  color: black;
 }
