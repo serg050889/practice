@@ -1,0 +1,116 @@
+.news {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+
+  &-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+
+  &-left,
+  &-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    max-width: 710px;
+    gap: 20px;
+    line-height: 1.5;
+  }
+
+  &-left {
+    flex-direction: row;
+  }
+
+  &-right {
+    margin-left: auto;
+  }
+
+  .news-left img,
+  .news-right img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+  &-left > div,
+  &-right > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  &-link{
+    text-decoration: underline;
+  }
+
+  &-button {
+    cursor: pointer;
+    align-self: center;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .news-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .news-left,
+  .news-right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;        /* Убираем ограничение */
+    width: 100%;            /* На всю ширину */
+    margin-left: 0;         /* Убираем прижатие вправо */
+  }
+
+  .news-left img,
+  .news-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .news-left > div,
+  .news-right > div {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .news-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
