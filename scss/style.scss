@@ -19,4 +19,9 @@
 
 body {
   overflow-x: hidden;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
