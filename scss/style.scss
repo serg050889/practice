@@ -1,3 +1,4 @@
+
 @import "normalize";
 @import "footer";
 @import "header";
@@ -13,4 +14,9 @@
 @import "banner";
 @import "button";
 @import "running-line";
+@import "hub";
 
+
+body {
+  overflow-x: hidden;
+}
